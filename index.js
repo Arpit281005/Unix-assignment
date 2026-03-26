@@ -14,7 +14,7 @@ db.run("CREATE TABLE IF NOT EXISTS items (id INTEGER PRIMARY KEY, name TEXT)");
 app.get("/", (req, res) => {
     db.all("SELECT * FROM items", [], (err, rows) => {
         let html = `
-        <h2>My Simple App</h2>
+        <h2>My Todo App</h2>
         <form method="POST" action="/add">
             <input name="name" placeholder="Enter something"/>
             <button>Add</button>
