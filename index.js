@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
         let html = `
         <h2>My Todo App</h2>
         <form method="POST" action="/add">
-            <input name="name" placeholder="Enter something"/>
+            <input name="name" placeholder="Enter task here"/>
             <button>Add</button>
         </form>
         <ul>
